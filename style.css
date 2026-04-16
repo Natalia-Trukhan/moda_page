@@ -1,0 +1,120 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --font-base: "Source Sans 3", sans-serif;
+  --font-special: "Montserrat", sans-serif;
+
+  --color-page-bg: #444444;
+  --color-visual-bg: #f0f0f0;
+
+  --fontNameArticle: 3rem;
+  --fontNameChapter: 2rem;
+  --fontIndent: 2em;
+  --fontDescription: 1em;
+  --fontOther: 2.5em;
+  --fontLink: 1.5em;
+  --fontDescriptionBanner: 1.5rem;
+  --fontVisualDescription: 1.4rem
+}
+
+
+body {
+  font-family: var(--font-base);
+  font-optical-sizing: auto;
+  margin: 0;
+  background: var(--color-page-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-special);
+  font-optical-sizing: auto;
+}
+
+.container {width: 100%;
+ max-width: 65rem; 
+margin-inline: auto;
+background: white;
+overflow: hidden;
+}
+
+header {display: flex;
+justify-content: space-between;
+padding: 1.5rem;
+align-items: center;
+}
+
+.logo, .cart {font-weight: bold;
+font-size: 2rem;}
+
+.menu__item {text-decoration: none;
+color: var(--color-page-bg);
+font-size: var(--fontLink);
+padding: 0.5em;
+}
+
+a:hover {color: rgb(132, 167, 147);}
+
+.banner {text-align: left;
+padding: 6rem 12rem 6rem 3rem;
+background-image: url(images/banner.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: rgb(227, 227, 214);}
+
+.banner__title {font-size: var(--fontNameArticle);}
+
+.banner__description {font-size: var(--fontDescriptionBanner);}
+
+.shop {display: flex; 
+padding: 3rem 3rem 3rem 3rem;
+justify-content: center;
+gap: 1rem;
+box-sizing: border-box;
+}
+
+.shop__item {
+display: flex;
+flex-direction: column;
+flex-shrink: 1;
+flex-basis: auto;
+flex-grow: 0;
+}
+
+.shop__image {width: 14rem; 
+display: block;
+}
+
+.shop__description {font-size: var(--fontDescription);
+}
+
+.shop__price, .shop__title {color: black;
+font-weight: bold;
+font-size: var(--fontDescriptionBanner);
+}
+
+.visual {display: flex;
+justify-content: center;
+
+}
+
+.visual__content {display: flex;
+flex-basis: 50%;
+background-color: gainsboro;
+}
+
+
+.visual__image {display: flex;
+width: 32.5rem;
+}
+
+.visual__title {font-size: var(--fontNameChapter);}
+.visual__description {font-size: var(--fontVisualDescription);}
+
+.visual__content{text-align: center;;
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 9rem 1.5rem;
+}
+
